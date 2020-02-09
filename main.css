@@ -31,7 +31,8 @@ li a {
 }
 
 .mainDiv {
-  background-color: lightblue;
+  background-image: url(https://images.unsplash.com/photo-1505562130589-9879683e72da?ixlib=rb-1.2.1&dpr=2&auto=format&fit=crop&w=416&h=312&q=60);
+  background-size: cover;
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -50,15 +51,18 @@ li a {
 
 h1 {
   font-size: 50px;
+  color: white;
+  flex: 2;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 30px;
+  flex: 1;
 }
 
 .aboutDiv {
   height: 100vh;
-  background-color: lightpink;
+  background-image: url(https://images.unsplash.com/photo-1536566482680-fca31930a0bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -70,8 +74,21 @@ h3 {
   border: 2px solid white;
   flex: 1;
 }
+
+.aboutCol1 h1 {
+  text-align: center;
+}
+
+.aboutCol1 p {
+  font-size: 25px;
+  margin: 40px;
+  text-align: center;
+  color: bisque;
+}
+
 .aboutCol2 {
   flex: 1;
+  border: 2px solid white;
 }
 
 .flip {
@@ -94,7 +111,7 @@ h3 {
 
 .experienceDiv {
   height: 100vh;
-  background-color: wheat;
+  background-image: url(https://images.unsplash.com/photo-1521811628991-7a3ea581f7d1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -102,17 +119,21 @@ h3 {
 
 .skillsDiv {
   height: 100vh;
-  background-color: lightsalmon;
+  background-image: url(https://images.unsplash.com/photo-1521193089946-7aa29d1fe776?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
 }
 
 .projectDiv {
   height: 100vh;
-  background-color: lightskyblue;
+  background-image: url(https://images.unsplash.com/photo-1541323429887-2e393b8db71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
 }
 
 .contactDiv {
-  height: 100vh;
-  background-color: lightyellow;
+  background-color: black;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .experienceCol1,
@@ -122,7 +143,18 @@ h3 {
   border: 2px dashed white;
 }
 
+.contact {
+  margin: 30px;
+}
 
+.contact p {
+  color: white;
+  font-size: 25px;
+}
+
+.contact a img {
+  width: 150px;
+}
 
 @media only screen and (max-width: 840px) {
   .aboutDiv {
@@ -130,6 +162,10 @@ h3 {
   }
 
   .experienceDiv {
+    flex-direction: column;
+  }
+
+  .contactDiv {
     flex-direction: column;
   }
 
