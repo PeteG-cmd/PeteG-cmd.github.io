@@ -4,109 +4,400 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"></script>
+  <link rel="stylesheet"
+    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Andika&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="main.css">
-  <title>My Profile</title>
+  <script src="app.js"></script>
+  <title>Peter Gilbert - Portfolio</title>
 </head>
 
 <body>
   <header>
+
   </header>
-  <div class="mainDiv">
-    <nav class="headNav">
-      <ul>
-        <li><a class="linkFlip" href="#about"><span class="flip">
-              <</span> About <span class="flip">>
-            </span></a></li>
-        <li><a class="linkFlip" href="#experience"><span class="flip">
-              <</span> Experience <span class="flip">>
-            </span></a></li>
-        <li><a class="linkFlip" href="#skills"><span class="flip">
-              <</span> Skills <span class="flip">>
-            </span></a></li>
-        <li><a class="linkFlip" href="#projects"><span class="flip">
-              <</span> Projects <span class="flip">>
-            </span></a></li>
-        <li><a class="linkFlip" href="#contacts"><span class="flip">
-              <</span> Contacts <span class="flip">>
-            </span></a></li>
-      </ul>
-    </nav>
-    <div class="nameDiv">
-      <h1>Peter Gilbert</h1>
-      <h3>Software Developer</h3>
-    </div>
-  </div>
+
+  <nav class='navbar'>
+    <p>About</p>
+    <p>Experience</p>
+    <p>Skills</p>
+    <p>Project</p>
+    <p>Contact</p>
+  </nav>
 
   <section>
-    <div class="aboutDiv" id="about">
+    <div class="namePage">
 
-      <div class="aboutCol1">
-        <h1 class="sectionTitle">About</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam sed, repellendus expedita aut aliquid ipsa,
-          aperiam explicabo hic voluptates eius dignissimos officia quos ducimus fugiat architecto animi harum quaerat
-          minus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur doloremque reiciendis cum corporis
-          reprehenderit iusto non tempora numquam unde? Nostrum laborum cum id molestias doloremque accusantium dolorem
-          ea dicta reprehenderit.</p>
+      <div class="columns growHeight">
+        <div class="column has-text-centered">
+          <figure class="profileImageContainer">
+            <img class='profileImage' src="assets/Peter-2616-122.jpeg" alt="Profile Picture">
+          </figure>
+          <div class="nameBox">
+            <p class="title">Peter Gilbert</p>
+            <p class="subtitle">Junior Full-Stack Developer</p>
+          </div>
+          <!-- </div> -->
+          <!-- <div class="column centered"> -->
+
+        </div>
       </div>
-      <div class="aboutCol2">
-        Some picture?
-      </div>
-
-    </div>
-  </section>
-  <section>
-    <div class="experienceDiv" id="experience">
-      <div class="experienceCol1">
-        <h1 class="sectionTitle">Experience</h1>
-      </div>
-
-      <div class="experienceCol2">
-
-      </div>
-
-      <div class="experienceCol3">
-
-
-      </div>
-    </div>
-
-  </section>
-
-  <section>
-    <div class="skillsDiv" id="skills">
-      <h1 class="sectionTitle">Skills</h1>
     </div>
   </section>
 
   <section>
-    <div class="projectDiv" id="projects">
-      <h1 class="sectionTitle">Projects</h1>
+    <div class="aboutPage">
+      <div class="columns growHeight has-text-centered">
+        <div class="column is-7">
+          <p class="title">About</p>
+          <p>I am a Software Developer based in London.</p>
+          <br>
+
+          <p>A highly-motivated person with a strong belief that improvement is always possible. My background is in global supply chains and analytics, and I have always had a passion for coding. This year I decided to follow this passion and enroled in the Software Engineering Immersive course with General Assembley to imporve my skills. I am now looking for an oportunity to put these skills to good use working as a Full-Stack Developer.  </p> 
+          <br>
+
+          <p>Below you can see my current skills and sample of my projects.
+        </div>
+        <div class="column is-5">
+          <div class="experienceMain">
+            <div class="experienceLogosDiv">
+              <div class='logoDiv straightRBorder' id='ga'>
+                <div class="arrowLBorder" id='ga'></div>
+                <figure class="logoContainer">
+                  <img src="assets/general-assembly-logo-png-9.png" alt="GA Logo" class="logoImage" id='ga'>
+                </figure>
+              </div>
+              <div class='logoDiv straightRBorder' id='innocent'>
+                <div class="arrowLBorder hidden" id=innocent></div>
+                <figure class="logoContainer">
+                  <img src="assets/250mlSB.png" alt="Innocnet Drinks Logo" class="logoImage" id='innocent'>
+                </figure>
+              </div>
+              <div class='logoDiv straightRBorder' id='newcastle'>
+                <div class="arrowLBorder hidden" id='newcastle'></div>
+                <figure class="logoContainer">
+                  <img src="assets/newcastle-uk-logo-800x800.jpg" alt="Newcastle university Logo" class="logoImage"
+                    id='newcastle'>
+                </figure>
+              </div>
+            </div>
+            <div class="jobDescriptionDiv">
+              <article class="about ga" id='ga'>
+                <p> GA Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sequi enim consequuntur dolores
+                  velit, hic reiciendis tenetur molestias accusantium ratione cumque eos reprehenderit iste error
+                  numquam suscipit quas aliquam amet.</p>
+              </article>
+              <article class="about innocent hidden" id='innocent'>
+                <p>INNOCENT Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sequi enim consequuntur dolores
+                  velit, hic reiciendis tenetur molestias accusantium ratione cumque eos reprehenderit iste error
+                  numquam suscipit quas aliquam amet.</p>
+              </article>
+              <article class="about newcastle hidden" id='newcastle'>
+                <p>NEWCASTLE UNI Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sequi enim consequuntur
+                  dolores velit, hic reiciendis tenetur molestias accusantium ratione cumque eos reprehenderit iste
+                  error numquam suscipit quas aliquam amet.</p>
+              </article>
+
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section>
+    <div class="contactPage">
+      <div class="columns has-text-centered">
+        <div class="column is-5-desktop">
+          <h1 class='title'>Contact</h1>
+          <div class="contact">
+            <a href='mailto:peter.gilbert88@icloud.com'><i class="fas fa-envelope fa-5x"></i></a>
+            <a href='https://www.linkedin.com/in/p-gilbert/'><i class="fab fa-linkedin fa-5x"></i></a>
+            <a href='https://github.com/PeteG-cmd'><i class="fab fa-github fa-5x"></i></a>
+          </div>
+        </div>
+        <div class="column is-7-desktop">
+          <h1 class='title'>Skills</h1>
+          <div class="icons">
+            <div class="icon">
+              <i class="fab fa-js-square fa-4x"></i>
+            </div>
+            <div class="icon">
+              <i class="fab fa-python fa-4x"></i>
+            </div>
+            <div class="icon">
+              <i class="fab fa-html5 fa-4x"></i>
+            </div>
+            <div class="icon">
+              <i class="fab fa-css3-alt fa-4x"></i>
+            </div>
+            <div class="icon">
+              <i class="fab fa-sass fa-4x"></i>
+            </div>
+            <div class="icon">
+              <i class="fab fa-react fa-4x"></i>
+            </div>
+            <div class="icon">
+              <i class="fab fa-node-js fa-4x"></i>
+            </div>
+            <div class="icon">
+              <i class="devicon-express-original sIcon"></i>
+            </div>
+            <div class="icon">
+              <i class="devicon-webpack-plain sIcon"></i>
+            </div>
+            <div class="icon">
+              <i class="devicon-django-plain sIcon"></i>
+            </div>
+            <div class="icon">
+              <i class="devicon-mongodb-plain sIcon"></i>
+            </div>
+            <div class="icon">
+              <i class="devicon-postgresql-plain-wordmark sIcon"></i>
+            </div>
+            <div class="icon">
+              <i class="fab fa-npm fa-4x"></i>
+            </div>
+            <div class="icon">
+              <i class="fab fa-yarn fa-4x"></i>
+            </div>
+            <div class="icon">
+              <i class="fab fa-git-alt fa-4x"></i>
+            </div>
+            <div class="icon">
+              <i class="fab fa-github fa-4x"></i>
+            </div>
+            <div class="icon">
+              <i class="devicon-mocha-plain sIcon"></i>
+            </div>
+            <div class="icon">
+
+              <i class="devicon-heroku-original sIcon"></i>
+            </div>
+            <div class="icon">
+              <i class="devicon-visualstudio-plain sIcon"></i>
+            </div>
+            <div class="icon">
+              <i class="fab fa-markdown fa-4x"></i>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
+
+  <section>
+
+    <div class="projectsPage">
+      <h1 class='title has-text-centered'>Projects</h1>
+      <div class="pageControl">
+       
+        <div class="level is-mobile is-centered box">
+          <div class="level-item pageNum">
+            <a id='1' class=projectPageNum>1</a>
+
+          </div>
+          <div class="level-item pageNum">
+            <a id='2' class=projectPageNum>2</a>
+          </div>
+          <div class="level-item pageNum">
+            <a id='3' class=projectPageNum>3</a>
+          </div>
+          <div class="level-item pageNum">
+            <a id='4' class=projectPageNum>4</a>
+          </div>
+          <div class="level-item pageNum">
+            <a id='5' class=projectPageNum>5</a>
+          </div>
+          <div class="level-item pageNum">
+            <a id='6' class=projectPageNum>6</a>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="tile is-ancestor projectPage" id='1'>
+        <div class="tile is-vertical">
+          <div class="tile">
+            <div class="tile is-parent is-6">
+              <div class="tile is-child box">
+                <img src="assets/HSP1.png" alt="">
+              </div>
+            </div>
+            <div class="tile is-parent is-6">
+              <div class="tile is-child box">
+                <img src="assets/HSP1.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="tile is-parent">
+            <div class="tile is-child box">
+              <img src="assets/HS1.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="tile is-vertical">
+          <div class="tile is-parent">
+            <div class="tile is-child box">
+              <img src="assets/HS1.png" alt="">
+            </div>
+          </div>
+          <div class="tile">
+            <div class="tile is-parent is-6">
+              <div class="tile is-child box">
+                <img src="assets/HSP1.png" alt="">
+              </div>
+            </div>
+            <div class="tile is-parent is-6">
+              <div class="tile is-child box">
+                <img src="assets/HSP1.png" alt="">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="tile is-ancestor projectPage hidden" id='2'>
+        <div class="tile is-vertical">
+          <div class="tile">
+            <div class="tile is-parent is-6">
+              <div class="tile is-child box">
+                <img src="assets/HSP1.png" alt="">
+              </div>
+            </div>
+            <div class="tile is-parent is-6">
+              <div class="tile is-child box">
+                <img src="assets/HSP1.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="tile is-parent">
+            <div class="tile is-child box">
+              <img src="assets/HS1.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="tile is-vertical">
+          <div class="tile is-parent">
+            <div class="tile is-child box">
+              <img src="assets/HS1.png" alt="">
+            </div>
+          </div>
+          <div class="tile">
+            <div class="tile is-parent is-6">
+              <div class="tile is-child box">
+                <img src="assets/HSP1.png" alt="">
+              </div>
+            </div>
+            <div class="tile is-parent is-6">
+              <div class="tile is-child box">
+                <img src="assets/HSP1.png" alt="">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="tile is-ancestor projectPage hidden" id='3'>
+        <div class="tile is-vertical">
+          <div class="tile">
+            <div class="tile is-parent is-6">
+              <div class="tile is-child box">
+                <img src="assets/HSP1.png" alt="">
+              </div>
+            </div>
+            <div class="tile is-parent is-6">
+              <div class="tile is-child box">
+                <img src="assets/HSP1.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="tile is-parent">
+            <div class="tile is-child box">
+              <img src="assets/HS1.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="tile is-vertical">
+          <div class="tile is-parent">
+            <div class="tile is-child box">
+              <img src="assets/HS1.png" alt="">
+            </div>
+          </div>
+          <div class="tile">
+            <div class="tile is-parent is-6">
+              <div class="tile is-child box">
+                <img src="assets/HSP1.png" alt="">
+              </div>
+            </div>
+            <div class="tile is-parent is-6">
+              <div class="tile is-child box">
+                <img src="assets/HSP1.png" alt="">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="tile is-ancestor projectPage hidden" id='4'>
+        <div class="tile is-vertical">
+          <div class="tile">
+            <div class="tile is-parent is-6">
+              <div class="tile is-child box">
+                <img src="assets/HSP1.png" alt="">
+              </div>
+            </div>
+            <div class="tile is-parent is-6">
+              <div class="tile is-child box">
+                <img src="assets/HSP1.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="tile is-parent">
+            <div class="tile is-child box">
+              <img src="assets/HS1.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="tile is-vertical">
+          <div class="tile is-parent">
+            <div class="tile is-child box">
+              <img src="assets/HS1.png" alt="">
+            </div>
+          </div>
+          <div class="tile">
+            <div class="tile is-parent is-6">
+              <div class="tile is-child box">
+                <img src="assets/HSP1.png" alt="">
+              </div>
+            </div>
+            <div class="tile is-parent is-6">
+              <div class="tile is-child box">
+                <img src="assets/HSP1.png" alt="">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
 
   <footer>
-    <div class="contactDiv" id="contacts">
-      <div class="contact">
-        <a href="http://www.github.com"><img
-            src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png" alt=""></a>
-      </div>
-
-      <div class="contact">
-        <p>website</p>
-      </div>
-
-      <div class="contact">
-        <a href="http://www.linkedin.co.uk"><img
-            src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Logo.svg.original.svg"
-            alt="">
-      </div>
-
-    </div>
-
+    <a href='mailto:peter.gilbert88@icloud.com'><i class="fas fa-envelope fa-2x"></i></a>
+    <a href='https://www.linkedin.com/in/p-gilbert/'><i class="fab fa-linkedin fa-2x"></i></a>
+    <a href='https://github.com/PeteG-cmd'><i class="fab fa-github fa-2x"></i></a>
   </footer>
+
+
 
 </body>
 
