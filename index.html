@@ -49,8 +49,8 @@
 
   <section>
     <div class="aboutPage">
-      <div class="columns growHeight has-text-centered">
-        <div class="column is-7">
+      <div class="columns growHeight">
+        <div class="column is-7 pad">
           <p class="title">About</p>
           <p>I am a Software Developer based in London.</p>
           <br>
@@ -112,74 +112,103 @@
         <div class="column is-5-desktop">
           <h1 class='title'>Contact</h1>
           <div class="contact">
-            <a href='mailto:peter.gilbert88@icloud.com'><i class="fas fa-envelope fa-5x"></i></a>
-            <a href='https://www.linkedin.com/in/p-gilbert/'><i class="fab fa-linkedin fa-5x"></i></a>
-            <a href='https://github.com/PeteG-cmd'><i class="fab fa-github fa-5x"></i></a>
+            <a class='contactIcon' href='mailto:peter.gilbert88@icloud.com'>
+              <i class="fas fa-envelope fa-5x"></i>
+              <p class='contactText'>peter.gilbert88@icloud.com</p>
+            </a>
+            <a class='contactIcon' href='https://www.linkedin.com/in/p-gilbert/'>
+              <i class="fab fa-linkedin fa-5x "></i>
+              <p class='contactText'>linkedin.com/in/p-gilbert/</p>
+            </a>
+            <a class='contactIcon' href='https://github.com/PeteG-cmd'>
+              <i class="fab fa-github fa-5x"></i>
+              <p class='contactText'>github.com/PeteG-cmd</p></a>
           </div>
         </div>
         <div class="column is-7-desktop">
           <h1 class='title'>Skills</h1>
           <div class="icons">
             <div class="icon">
-              <i class="fab fa-js-square fa-4x"></i>
+              <i class="devicon-javascript-plain sIcon"></i>
+              <p class='description'>JavaScript</p>
             </div>
             <div class="icon">
-              <i class="fab fa-python fa-4x"></i>
-            </div>
-            <div class="icon">
-              <i class="fab fa-html5 fa-4x"></i>
-            </div>
-            <div class="icon">
-              <i class="fab fa-css3-alt fa-4x"></i>
-            </div>
-            <div class="icon">
-              <i class="fab fa-sass fa-4x"></i>
-            </div>
-            <div class="icon">
-              <i class="fab fa-react fa-4x"></i>
-            </div>
-            <div class="icon">
-              <i class="fab fa-node-js fa-4x"></i>
-            </div>
-            <div class="icon">
-              <i class="devicon-express-original sIcon"></i>
-            </div>
-            <div class="icon">
-              <i class="devicon-webpack-plain sIcon"></i>
+              <i class="devicon-python-plain sIcon"></i>
+              <p class='description'>Python</p>
             </div>
             <div class="icon">
               <i class="devicon-django-plain sIcon"></i>
+              <p class='description'>Django</p>
             </div>
             <div class="icon">
+              <i class="devicon-html5-plain sIcon"></i>
+              <p class='description'>HTML</p>
+            </div>
+            <div class="icon">
+              <i class="devicon-css3-plain sIcon"></i>
+              <p class='description'>CSS</p>
+            </div>
+            <div class="icon">
+              <i class="devicon-sass-original sIcon"></i>
+              <p class='description'>SASS</p>
+            </div>
+            <div class="icon">
+              <i class="devicon-react-original sIcon"></i>
+              <p class='description'>React.js</p>
+            </div>
+            <div class="icon">
+              <i class="devicon-nodejs-plain sIcon"></i>
+              <p class='description'>Node.js</p>
+            </div>
+            <div class="icon">
+              <i class="devicon-express-original sIcon"></i>
+              <p class='description'>Express.js</p>
+            </div>
+            <div class="icon">
+              <i class="devicon-webpack-plain sIcon"></i>
+              <p class='description'>Webpack</p>
+            </div>
+           
+            <div class="icon">
               <i class="devicon-mongodb-plain sIcon"></i>
+              <p class='description'>MongoDB</p>
             </div>
             <div class="icon">
               <i class="devicon-postgresql-plain-wordmark sIcon"></i>
+              <p class='description'>PostgreSQL</p>
             </div>
             <div class="icon">
               <i class="fab fa-npm fa-4x"></i>
+              <p class='description'>NPM</p>
             </div>
             <div class="icon">
               <i class="fab fa-yarn fa-4x"></i>
+              <p class='description'>Yarn</p>
             </div>
             <div class="icon">
-              <i class="fab fa-git-alt fa-4x"></i>
+              <i class="devicon-git-plain sIcon"></i>
+              <p class='description'>Git</p>
             </div>
             <div class="icon">
-              <i class="fab fa-github fa-4x"></i>
+              <i class="devicon-github-plain sIcon"></i>
+              <p class='description'>GitHub</p>
             </div>
             <div class="icon">
               <i class="devicon-mocha-plain sIcon"></i>
+              <p class='description'>Mocha.js</p>
             </div>
             <div class="icon">
-
               <i class="devicon-heroku-original sIcon"></i>
+              <p class='description'>Heroku</p>
             </div>
             <div class="icon">
               <i class="devicon-visualstudio-plain sIcon"></i>
+              <p class='description'>VSCode</p>
             </div>
             <div class="icon">
               <i class="fab fa-markdown fa-4x"></i>
+              <p class='description'>Markdown</p>
+
             </div>
           </div>
         </div>
@@ -193,10 +222,12 @@
       <h1 class='title has-text-centered'>Projects</h1>
       <div class="pageControl">
        
-        <div class="level is-mobile is-centered box">
+        <div class="level is-mobile is-centered">
+          <div class="level-item pageNum">
+            <a id='minus' class=projectPageNum>-</a>
+          </div>
           <div class="level-item pageNum">
             <a id='1' class=projectPageNum>1</a>
-
           </div>
           <div class="level-item pageNum">
             <a id='2' class=projectPageNum>2</a>
@@ -212,6 +243,9 @@
           </div>
           <div class="level-item pageNum">
             <a id='6' class=projectPageNum>6</a>
+          </div>
+          <div class="level-item pageNum">
+            <a id='plus' class=projectPageNum>+</a>
           </div>
         </div>
       </div>
