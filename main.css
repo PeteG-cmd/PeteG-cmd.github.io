@@ -25,7 +25,7 @@ html {
 
 }
 
-.navbar p {
+.navbar a {
   padding: 8px;
   border-bottom: 3px solid red;
   color: white;
@@ -61,7 +61,8 @@ html {
 /* About and experience page */
 
 .about p {
-  transform: rotate(90deg);
+  /* transform: rotate(90deg); */
+  padding: 20px;
 }
 
 .experienceMain {
@@ -156,6 +157,7 @@ html {
   font-size: 11px;
   margin-bottom: 12px;
 }
+
 
 
 
@@ -314,4 +316,8 @@ footer a {
   display: none;
 }
 
-
+@media screen and (max-width: 815px) {
+  .icons {
+    border-left: none;
+  }
+}

@@ -20,11 +20,12 @@
   </header>
 
   <nav class='navbar'>
-    <p>About</p>
-    <!-- <p>Experience</p> -->
-    <p>Skills</p>
-    <p>Project</p>
-    <p>Contact</p>
+  
+    <a href="#aboutPage">About</a>
+    <a href="#contactPage">Contact</a>
+    <a href="#skillsPage">Skills</a>
+    <a href="#projectsPage">Projects</a>
+    
   </nav>
 
   <section>
@@ -48,14 +49,15 @@
   </section>
 
   <section>
-    <div class="aboutPage">
+    <div class="aboutPage" id='aboutPage'>
       <div class="columns growHeight">
         <div class="column is-7 pad">
           <p class="title">About</p>
           <p>I am a Software Developer based in London.</p>
-          <br>
 
-          <p>A highly-motivated person with a strong belief that improvement is always possible. My background is in global supply chains and analytics, and I have always had a passion for coding. This year I decided to follow this passion and enroled in the Software Engineering Immersive course with General Assembley to imporve my skills. I am now looking for an oportunity to put these skills to good use working as a Full-Stack Developer.  </p> 
+          <p>A highly-motivated person with a strong belief that improvement is always possible. </p>
+          <br>
+            <p>My background is in global supply chains and analytics, and I have always had a passion for coding. This year I decided to follow this passion and enroled in the Software Engineering Immersive course with General Assembley to imporve my skills. I am now looking for an oportunity to put these skills to good use working as a Full-Stack Developer.  </p> 
           <br>
 
           <p>Below you can see my current skills and sample of my projects.
@@ -85,13 +87,19 @@
             </div>
             <div class="jobDescriptionDiv">
               <article class="about ga" id='ga'>
-                <p> GA Lorem.</p>
+                <p> General Assembly, London.</p>
+                <p>Software Engineering Immersive</p>
+                <p>Feb 2020 - May 2020</p>
               </article>
               <article class="about innocent hidden" id='innocent'>
-                <p>INNOCENT Lorem.</p>
+                <p>Innocent Drinks, London.</p>
+                <p>Industry Manager</p>
+                <p>July 2016 - Jan 2020</p>
               </article>
               <article class="about newcastle hidden" id='newcastle'>
-                <p>NEWCASTLE UNI Lorem.</p>
+                <p>Newcastle University.</p>
+                <p>Human Geography (BA)</p>
+                <p>2009 - 2011</p>
               </article>
 
             </div>
@@ -101,7 +109,7 @@
   </section>
 
   <section>
-    <div class="contactPage">
+    <div class="contactPage" id='contactPage'>
       <div class="columns has-text-centered">
         <div class="column is-5-desktop">
           <h1 class='title'>Contact</h1>
@@ -120,7 +128,7 @@
           </div>
         </div>
         <div class="column is-7-desktop">
-          <h1 class='title'>Skills</h1>
+          <h1 class='title' id='skillsPage'>Skills</h1>
           <div class="icons">
             <div class="icon">
               <i class="devicon-javascript-plain sIcon"></i>
@@ -211,7 +219,7 @@
 
   <section>
 
-    <div class="projectsPage">
+    <div class="projectsPage" id='projectsPage'>
       <h1 class='title has-text-centered'>Projects</h1>
       <div class="pageControl">
        
@@ -287,8 +295,37 @@
               </div>
             </div>
           </div>
-
         </div>
+      </div>
+      <div class="tile is-ancestor">
+            <div class="tile is-parent is-3">
+              <div class="tile is-child box">
+                <div class="projectLogo">
+                <img src="assets/House-Share_signup.png" alt="">
+              </div>
+              </div>
+            </div>
+            <div class="tile is-parent is-3">
+              <div class="tile is-child box">
+                <div class="projectLogo">
+                <img src="assets/House-Share_user_detail.png" alt="">
+              </div>
+              </div>
+            </div>
+            <div class="tile is-parent is-3">
+              <div class="tile is-child box">
+                <div class="projectLogo">
+                <img src="assets/house-share-expense_list.png" alt="">
+              </div>
+              </div>
+            </div>
+            <div class="tile is-parent is-3">
+              <div class="tile is-child box">
+                <div class="projectLogo">
+                <img src="assets/house-share-grouped_expense.png" alt="">
+              </div>
+              </div>
+            </div>
       </div>
 
       <div class="tile is-ancestor projectPage hidden" id='2'>
@@ -296,7 +333,7 @@
           <div class="tile">
             <div class="tile is-parent is-6">
               <div class="tile is-child box">
-                <img src="#" alt="">
+                <img src="assets/bookedup - logo.png" alt="">
               </div>
             </div>
             <div class="tile is-parent is-6">
@@ -346,7 +383,7 @@
           <div class="tile">
             <div class="tile is-parent is-6">
               <div class="tile is-child box">
-                <img src="#" alt="">
+                <img class="tubeImage" src="assets/tube-mapper-logo.png" alt="">
               </div>
             </div>
             <div class="tile is-parent is-6">
@@ -365,14 +402,14 @@
           </div>
           <div class="tile is-parent">
             <div class="tile is-child box">
-              <img src="assets/tubemap - station list.png" alt="">
+              <img src="assets/tubemap - facilities.png" alt="">
             </div>
           </div>
         </div>
         <div class="tile is-vertical">
           <div class="tile is-parent">
             <div class="tile is-child box">
-              <img src="assets/tubemap - arrivals.png" alt="">
+              <img src="assets/tubemap - station list.png" alt="">
             </div>
           </div>
           <div class="tile">
@@ -396,17 +433,16 @@
           <div class="tile">
             <div class="tile is-parent is-6">
               <div class="tile is-child box">
-                <img src="#" alt="">
+                <img src="assets/pac-dude-game-start.png" alt="">
               </div>
             </div>
             <div class="tile is-parent is-6">
               <div class="tile is-child box">
                 <div class="projectInfo">
                   <h2>=> PAC-DUDE</h2>
-                  <p>LINKS TO PROJECT</p>
                   <p class="heading has-text-centered">Task</p>
                   <p>To make a game to run in the browser using 'vanilla' JS, HTML & CSS</p>
-                  <p>For this project i choose to make a themed version of the classic PacMan game. The game has 5 levels which progressivly increase in difficulty, using a Bredth First Search algorithm to controll the 'ghosts'. The game includes additional superfoods including allowing the user to collect and shoot missliles</p>
+                  <p>For this project I created a themed version of the classic PacMan game. The game has 5 levels which progressivly increase in difficulty, using a Bredth First Search algorithm to controll the 'ghosts'. The game includes additional superfoods including allowing the user to collect and shoot missliles</p>
                   <p class="heading has-text-centered">Technologies</p>
                   <p>JAVASCRIPT | HTML | CSS | GIT & GITHUB </p> 
                 </div>
@@ -415,21 +451,31 @@
           </div>
           <div class="tile is-parent">
             <div class="tile is-child box">
-              <img src="assets/HS1.png" alt="">
+              <img src="assets/pac-dude-missile-exp.png" alt="">
+            </div>
+          </div>
+          <div class="tile is-parent">
+            <div class="tile is-child box">
+              <img src="assets/pac-dude-frozen.png" alt="">
             </div>
           </div>
         </div>
         <div class="tile is-vertical">
           <div class="tile is-parent">
             <div class="tile is-child box">
-              <img src="assets/HS1.png" alt="">
+              <img src="assets/pac-dude-start.png" alt="">
             </div>
           </div>
           <div class="tile">
             <div class="tile is-parent">
               <div class="tile is-child box">
-                <img src="#" alt="">
+                <img src="assets/pac-dude-eatable.png" alt="">
               </div>
+            </div>
+          </div>
+          <div class="tile is-parent">
+            <div class="tile is-child box">
+              <img src="assets/pac-dude-home.png" alt="">
             </div>
           </div>
         </div>
