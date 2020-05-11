@@ -1,6 +1,5 @@
 function main() {
 
-
   mapPages()
 
   function mapPages() {
@@ -19,6 +18,13 @@ function main() {
   }
 
   function dispalyProject(project) {
+    if (project === 'plus' && findCurrentProject() === 3) return
+    if (project === 'minus' && findCurrentProject() === 0) return
+    if (project === 'minus') {
+      project = findCurrentProject()
+    } else if (project === 'plus') {
+      project = findCurrentProject() + 2
+    }
     const projectPages = document.querySelectorAll('.projectPage')
     for (let i = 0; i < projectPages.length; i++) {
       projectPages[i].classList.add('hidden')
@@ -26,6 +32,17 @@ function main() {
         projectPages[i].classList.remove('hidden')
       }
     }
+  }
+
+  function findCurrentProject() {
+    let currentProject = null
+    const projectPages = document.querySelectorAll('.projectPage')
+    for (let i = 0; i < projectPages.length; i++) {
+      if (!projectPages[i].classList.contains('hidden')) {
+        currentProject = i
+      }
+    }
+    return currentProject
   }
 
   function dispalyAbout(logo) {
@@ -37,7 +54,6 @@ function main() {
       if (articles[i].id === logo) {
         articles[i].classList.remove('hidden')
         arrows[i].classList.remove('hidden')
-
       }
     }
   }

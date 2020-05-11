@@ -46,6 +46,8 @@ html {
   width: 250px;
   height: 250px;
   margin: auto;
+  margin-top: 100px;
+  
 
 }
 
@@ -100,11 +102,15 @@ html {
   width: 100px;
   height: 100px;
   margin: 25px;
+  display: flex;
+  align-items: center;
 }
 
-.tile-padded {
-  padding: 10px;
+.tile {
+  padding: 0;
 }
+
+/* PROJECT INFORMATION */
 
 .pageControl {
   display: flex;
@@ -123,6 +129,39 @@ html {
 .pageNum a {
   color: black;
 }
+
+.projectLogo {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+}
+
+.projectInfo {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background-color: rgb(230, 232, 233);
+  /* justify-content: space-between; */
+}
+
+.projectInfo h2 {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.projectInfo p {
+  font-size: 11px;
+  margin-bottom: 12px;
+}
+
+
+
+
+
+
 
 /* Skills and Contact Section */
 
@@ -209,7 +248,6 @@ html {
   }
 }
 
-
 .icon :first-child:hover ~ .description {
   /* display: inline */
   animation: describe 0.5s forwards;
@@ -275,3 +313,5 @@ footer a {
 .hidden *, .hidden .is-parent, .hidden {
   display: none;
 }
+
+
