@@ -21,15 +21,22 @@ html {
   height: 8%;
   background-color: black;
   align-items: center;
-  
-
+  justify-content: space-between;
 }
+
+
 
 .navbar a {
   padding: 8px;
-  border-bottom: 3px solid red;
+  /* border-bottom: 3px solid red; */
   color: white;
 }
+
+.navbar a:hover {
+  color: goldenrod;
+}
+
+
 
 /* Name & Picture page */
 
@@ -61,19 +68,43 @@ html {
 /* About and experience page */
 
 .about p {
-  /* transform: rotate(90deg); */
-  padding: 20px;
+  padding: 5px;
+}
+
+span {
+  font-size: 0.7em;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.jobDescriptionDiv {
+  margin-top: 10px;
+  min-height: 180px;
+}
+
+.dates {
+  font-size: small;
+  font-style: italic;
+}
+
+.company {
+  font-size: 1.5em;
+}
+
+.position {
+  font-weight: 700;
 }
 
 .experienceMain {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   height: 100%;
 }
 
 .experienceLogosDiv {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   height: 100%;
   /* border-right: 2px solid red; */
@@ -83,8 +114,9 @@ html {
   position: relative;
 }
 
+
 .straightRBorder {
-  border-right: 1px solid grey;
+  border-bottom: 1px solid grey;
 }
 
 .arrowLBorder {
@@ -92,24 +124,23 @@ html {
   width: 10px;
   background-color: rgb(255, 253, 247); /* MAKE THIS THE SAME AS THE BACKGROUND COLOR */
   border-left: 1px solid black;
-  border-top: 1px solid black;
+  border-bottom: 1px solid black;
   position: absolute;
-  right: -5px;
-  bottom: 50%;
+  right: 50%;
+  bottom: -6px;
   transform: rotate(-45deg)
 }
 
 .logoContainer {
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 50px;
   margin: 25px;
+  margin-bottom: 5px;
   display: flex;
   align-items: center;
 }
 
-.tile {
-  padding: 0;
-}
+
 
 /* PROJECT INFORMATION */
 
@@ -158,9 +189,9 @@ html {
   margin-bottom: 12px;
 }
 
-
-
-
+.tile {
+  padding: 0;
+}
 
 
 
@@ -204,7 +235,7 @@ html {
   flex-wrap: wrap;
   justify-content: center;
   padding: 0 50px;
-  border-left: 1px solid black;
+  /* border-bottom: 1px solid black; */
 }
 
 .icon {
@@ -220,29 +251,28 @@ html {
 
 }
 
-.icon :first-child:hover {
+.icon:hover {
   animation: color 0.5s forwards;
   /* color: rgb(255, 134, 255); */
 }
 
-.icon :first-child:not(:hover) {
+.icon:not(:hover) {
   animation: colorout 0.5s forwards;
-  /* color: rgb(255, 134, 255); */
 }
 
 @keyframes color {
   0% {
-    color: black;
+    color: black; left: 0; top: 0;
   }
 
   100% {
-    color: rgb(255, 134, 255);
+    color: gold;
   }
 }
 
 @keyframes colorout {
   0% {
-    color: rgb(255, 134, 255);
+    color: gold;
   }
 
   100% {
@@ -265,14 +295,26 @@ html {
     opacity: 0;
   }
 
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+
   100% {
     opacity: 1;
+    transform: translateY(170%);
   }
 }
 
 @keyframes describeout {
   0% {
     opacity: 1;
+    transform: translateY(170%);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
   }
 
   100% {
@@ -305,7 +347,10 @@ footer {
 footer a {
   margin: 10px 30px;
   color: white;
+}
 
+footer a:hover {
+  color: goldenrod;
 }
 
 .pad {
