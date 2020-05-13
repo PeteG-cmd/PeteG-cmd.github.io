@@ -65,6 +65,7 @@ html {
 .name {
   font-size: 3em;
   color: aliceblue;
+  font-weight: 700;
 }
 
 .devPosition {
@@ -193,31 +194,66 @@ span {
   background-color: lightblue;
 }
 
+
 .projectInfo {
   height: 100%;
   display: flex;
   flex-direction: column;
   padding: 15px;
   background-color: rgb(230, 232, 233);
-  /* justify-content: space-between; */
+  overflow: auto;
+  max-height: 500px;
+  /* height: 500px; */
+  
+}
+
+.projectInfo .heading {
+  font-size: 15px;
+  font-weight: 700;
+  color: goldenrod;
+
 }
 
 .projectInfo h2 {
-  font-size: 15px;
-  margin-bottom: 15px;
+  font-size: 20px;
+  margin-bottom: 7px;
+  font-weight: 900;
 }
 
 .projectInfo p {
-  font-size: 11px;
+  font-size: 14px;
   margin-bottom: 12px;
+}
+
+.projectLinks {
+  display: flex;
+  justify-content: center;
+}
+
+.projectLinks > a {
+  margin: 10px;
+  color: black;
+}
+
+.projectLinks > a:hover {
+  color: goldenrod;
 }
 
 .tile {
   padding: 0;
 }
 
+/* .tile img {
+  align-self: center;
+} */
 
+.black {
+  background-color: black;
+}
 
+.bookClubBlue {
+  background-color: lightblue;
+}
 
 /* Skills and Contact Section */
 
@@ -377,14 +413,30 @@ footer a:hover {
 }
 
 .pad {
-  padding: 0 50px;;
+  padding: 0 50px;
 }
 
 .hidden *, .hidden .is-parent, .hidden {
   display: none;
 }
 
+.mobileNone {
+  display: inline;
+}
+
+.mobileShow {
+  display: none;
+}
+
 @media screen and (max-width: 815px) {
+
+  .mobileNone {
+    display: none;
+  }
+
+  .mobileShow {
+    display: inline;
+  }
 
   .nameBox {
     align-items: flex-start;
@@ -400,6 +452,10 @@ footer a:hover {
 
   .navbar > * {
     padding: 4px 8px;
+  }
+
+  .pad {
+    padding: 0 25px;
   }
 
 }

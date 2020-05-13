@@ -44,9 +44,9 @@
   <nav class='navbar'>
     <div class="links">
       <a href="#aboutPage">About</a>
-      <a href="#contactPage">Contact</a>
       <a href="#skillsPage">Skills</a>
       <a href="#projectsPage">Projects</a>
+      <a href="#footer">Contact</a>
     </div>
     <div class="rightAlign">
       <a href='mailto:peter.gilbert88@icloud.com'><i class="fas fa-envelope fa-2x"></i></a>
@@ -139,7 +139,7 @@
     <div class="contactPage" id='contactPage'>
       <div class="columns has-text-centered">
      
-        <div class="column is-8-desktop is-offset-2">
+        <div class="column is-8-desktop is-8-tablet is-offset-2">
           <h1 class='title' id='skillsPage'>Skills</h1>
           <div class="icons">
             <div class="icon">
@@ -233,7 +233,7 @@
       <h1 class='title has-text-centered'>Projects</h1>
       <div class="pageControl">
 
-        <div class="level is-centered">
+        <div class="level is-centered is-mobile">
           <div class="level-item pageNum">
             <a id='minus' class=projectPageNum>-</a>
           </div>
@@ -262,7 +262,8 @@
               <div class="tile is-parent is-6">
                 <div class="tile is-child box">
                   <div class="projectLogo">
-                    <img src="assets/House-share-logo.png" alt="">
+                    <img src="assets/House-share-logo.png" alt="House Share Logo Image" class="mobileNone">
+                    <img src="assets/House-share-logo-mobile.png" alt="House Share Logo Image" class="mobileShow"> 
                   </div>
                 </div>
               </div>
@@ -270,40 +271,47 @@
                 <div class="tile is-child box">
                   <div class="projectInfo">
                     <h2>=> House-Share</h2>
-                    <p>LINKS TO PROJECT</p>
-                    <p class="heading has-text-centered">Task</p>
+                    <div class="projectLinks">
+                      <a href="https://m-house-s.herokuapp.com">
+                      <i class="fas fa-link fa-1x"></i>
+                    </a>
+                    <a href="https://github.com/PeteG-cmd/project-4">
+                      <i class="fab fa-github fa-1x"></i>
+                    </a>
+                    </div>
+                    <p class="heading">Task</p>
                     <p>Create a full stack application in one week.</p>
                     <p>Working alone, I chose to build a Django app with a React front end and a PostgreSQL database. In
                       the app users are able to create house groups, which existing or new housemates are then able to
                       request access to. Once in the group expenses can then be entered along with additional
                       information and images, and can mark expenses as paid, with this information available to all
                       group members</p>
-                    <p class="heading has-text-centered">Technologies</p>
+                    <p class="heading">Technologies</p>
                     <p>DJANGO | REACT.JS | POSTGRESQL | HTML | SCSS | BULMA | HEROKU | JWT </p>
                   </div>
                 </div>
               </div>
             </div>
             <div class="tile is-parent">
-              <div class="tile is-child box">
+              <div class="tile is-child box bookClubBlue">
                 <img src="assets/House-Share_expense_detail_2.png" alt="">
               </div>
             </div>
           </div>
           <div class="tile is-vertical">
             <div class="tile is-parent">
-              <div class="tile is-child box">
+              <div class="tile is-child box bookClubBlue">
                 <img src="assets/house-share-homepage.png" alt="">
               </div>
             </div>
             <div class="tile">
               <div class="tile is-parent is-6">
-                <div class="tile is-child box">
+                <div class="tile is-child box bookClubBlue">
                   <img src="assets/house-share-mobile-expense_split.png" alt="">
                 </div>
               </div>
               <div class="tile is-parent is-6">
-                <div class="tile is-child box">
+                <div class="tile is-child box bookClubBlue">
                   <img src="assets/house-share-mobile-home.png" alt="">
                 </div>
               </div>
@@ -312,28 +320,28 @@
         </div>
         <div class="tile is-ancestor">
           <div class="tile is-parent is-3">
-            <div class="tile is-child box">
+            <div class="tile is-child box bookClubBlue">
               <div class="projectLogo">
                 <img src="assets/House-Share_signup.png" alt="">
               </div>
             </div>
           </div>
           <div class="tile is-parent is-3">
-            <div class="tile is-child box">
+            <div class="tile is-child box bookClubBlue">
               <div class="projectLogo">
                 <img src="assets/House-Share_user_detail.png" alt="">
               </div>
             </div>
           </div>
           <div class="tile is-parent is-3">
-            <div class="tile is-child box">
+            <div class="tile is-child box bookClubBlue">
               <div class="projectLogo">
                 <img src="assets/house-share-expense_list.png" alt="">
               </div>
             </div>
           </div>
           <div class="tile is-parent is-3">
-            <div class="tile is-child box">
+            <div class="tile is-child box bookClubBlue">
               <div class="projectLogo">
                 <img src="assets/house-share-grouped_expense.png" alt="">
               </div>
@@ -346,21 +354,29 @@
         <div class="tile is-vertical">
           <div class="tile">
             <div class="tile is-parent is-6">
-              <div class="tile is-child box">
-                <img src="assets/bookedup - logo.png" alt="">
+              <div class="tile is-child box bookClubBlue">
+                <img src="assets/bookedup - logo.png" alt="Booked-Up Logo" class="mobileNone">
+                <img src="assets/bookedup - logo-mobile.png" alt="Booked-Up Logo" class='mobileShow'>
               </div>
             </div>
             <div class="tile is-parent is-6">
               <div class="tile is-child box">
                 <div class="projectInfo">
                   <h2>=> Booked-Up!</h2>
-                  <p>LINKS TO PROJECT</p>
-                  <p class="heading has-text-centered">Task</p>
+                  <div class="projectLinks">
+                    <a href="https://booked-up.herokuapp.com">
+                    <i class="fas fa-link fa-1x"></i>
+                  </a>
+                  <a href="https://github.com/PeteG-cmd/project-3">
+                    <i class="fab fa-github fa-1x"></i>
+                  </a>
+                  </div>
+                  <p class="heading">Task</p>
                   <p>Create a full stack application in one week</p>
                   <p>Working in a group of three we created a React app which allowed users to find, store and comment
                     on differant books. The app uses a MongoDB database and an Express.js back end. The app also allows
                     users to create and host private chat rooms</p>
-                  <p class="heading has-text-centered">Technologies</p>
+                  <p class="heading">Technologies</p>
                   <p>REACT.JS | EXPRESS.JS| MONGODB & MONGOOSE | HTML | SCSS | BULMA | HEROKU | JWT | NY TIMES API |
                     GOOGLE BOOKS API </p>
                 </div>
@@ -368,25 +384,25 @@
             </div>
           </div>
           <div class="tile is-parent">
-            <div class="tile is-child box">
+            <div class="tile is-child box bookClubBlue">
               <img src="assets/booked-up-allBookClubs.png" alt="">
             </div>
           </div>
         </div>
         <div class="tile is-vertical">
           <div class="tile is-parent">
-            <div class="tile is-child box">
+            <div class="tile is-child box bookClubBlue">
               <img src="assets/booked-up-bookclub.png" alt="">
             </div>
           </div>
           <div class="tile">
             <div class="tile is-parent is-6">
-              <div class="tile is-child box">
+              <div class="tile is-child box bookClubBlue">
                 <img src="assets/Booked-Up - pLogin.png" alt="">
               </div>
             </div>
             <div class="tile is-parent is-6">
-              <div class="tile is-child box">
+              <div class="tile is-child box bookClubBlue">
                 <img src="assets/Booked-up-home-p.png" alt="">
               </div>
             </div>
@@ -407,12 +423,19 @@
               <div class="tile is-child box">
                 <div class="projectInfo">
                   <h2>=> Tube Time</h2>
-                  <p>LINKS TO PROJECT</p>
-                  <p class="heading has-text-centered">Task</p>
+                  <div class="projectLinks">
+                    <a href="https://peter-gilbert.co.uk/project-2">
+                    <i class="fas fa-link fa-1x"></i>
+                  </a>
+                  <a href="https://github.com/PeteG-cmd/project-2 ">
+                    <i class="fab fa-github fa-1x"></i>
+                  </a>
+                  </div>
+                  <p class="heading">Task</p>
                   <p>In two days create a React app utilising a public API</p>
                   <p>Working in a pair we created a fron end React app that used the TFL API to provide users with
                     station information and arrival times for every train and station on the TFL network</p>
-                  <p class="heading has-text-centered">Technologies</p>
+                  <p class="heading">Technologies</p>
                   <p>REACT.JS | TFL API | HTML | CSS | BULMA | WEBPACK | GIT & GITHUB </p>
                 </div>
               </div>
@@ -450,52 +473,61 @@
         <div class="tile is-vertical">
           <div class="tile">
             <div class="tile is-parent is-6">
-              <div class="tile is-child box">
-                <img src="assets/pac-dude-game-start.png" alt="">
+              <div class="tile is-child box black">
+                <img src="assets/pac-dude-game-start.png" alt="PAC-DUDE Logo" class="mobileNone"> 
+                <img src="assets/pac-dude-game-start-mobile.png" alt="PAC-DUDE Logo" class="mobileShow"> 
               </div>
             </div>
             <div class="tile is-parent is-6">
               <div class="tile is-child box">
                 <div class="projectInfo">
                   <h2>=> PAC-DUDE</h2>
-                  <p class="heading has-text-centered">Task</p>
+                  <div class="projectLinks">
+                    <a href="https://peter-gilbert.co.uk/project-1">
+                    <i class="fas fa-link fa-1x"></i>
+                  </a>
+                  <a href="https://github.com/PeteG-cmd/project-1">
+                    <i class="fab fa-github fa-1x"></i>
+                  </a>
+                  </div>
+                  <p class="heading">Task</p>
                   <p>To make a game to run in the browser using 'vanilla' JS, HTML & CSS</p>
                   <p>For this project I created a themed version of the classic PacMan game. The game has 5 levels which
                     progressivly increase in difficulty, using a Bredth First Search algorithm to controll the 'ghosts'.
                     The game includes additional superfoods including allowing the user to collect and shoot missliles
                   </p>
-                  <p class="heading has-text-centered">Technologies</p>
+                  <p class="heading">Technologies</p>
                   <p>JAVASCRIPT | HTML | CSS | GIT & GITHUB </p>
                 </div>
               </div>
             </div>
           </div>
           <div class="tile is-parent">
-            <div class="tile is-child box">
+            <div class="tile is-child box black">
               <img src="assets/pac-dude-missile-exp.png" alt="">
             </div>
           </div>
           <div class="tile is-parent">
-            <div class="tile is-child box">
+            <div class="tile is-child box black">
               <img src="assets/pac-dude-frozen.png" alt="">
             </div>
           </div>
         </div>
         <div class="tile is-vertical">
           <div class="tile is-parent">
-            <div class="tile is-child box">
+            <div class="tile is-child box black">
               <img src="assets/pac-dude-start.png" alt="">
             </div>
           </div>
           <div class="tile">
             <div class="tile is-parent">
-              <div class="tile is-child box">
+              <div class="tile is-child box black">
                 <img src="assets/pac-dude-eatable.png" alt="">
               </div>
             </div>
           </div>
           <div class="tile is-parent">
-            <div class="tile is-child box">
+            <div class="tile is-child box black">
               <img src="assets/pac-dude-home.png" alt="">
             </div>
           </div>
@@ -507,7 +539,7 @@
   </section>
 
 
-  <footer>
+  <footer id='footer'>
     <a href='mailto:peter.gilbert88@icloud.com'><i class="fas fa-envelope fa-2x"></i></a>
     <a href='https://www.linkedin.com/in/p-gilbert/'><i class="fab fa-linkedin fa-2x"></i></a>
     <a href='https://github.com/PeteG-cmd'><i class="fab fa-github fa-2x"></i></a>
