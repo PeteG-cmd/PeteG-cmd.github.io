@@ -1,12 +1,13 @@
 * {
   box-sizing: border-box;
-  font-family: 'Andika', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 html {
   background-color: rgb(255, 253, 247);
-  padding: 20px;
+  /* padding: 20px; */
 }
+
 
 .growHeight {
   height: 100%;
@@ -18,16 +19,15 @@ html {
 
   display: flex;
   flex-direction: row;
-  height: 8%;
-  background-color: black;
+  height: 12%;
+  background-color: rgb(32, 30, 30);
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 50px;
 }
 
-
-
 .navbar a {
-  padding: 8px;
+  padding: 16px;
   /* border-bottom: 3px solid red; */
   color: white;
 }
@@ -42,11 +42,36 @@ html {
 
 .namePage {
   height: 92vh;
+  width: 100%;
+  background-image: url('./assets/wood-background.jpg');
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 .nameBox {
   padding: 20px;
-  /* border: 2px solid red; */
+  text-align: right;
+  margin-right: 10%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  
+}
+
+.name {
+  font-size: 3em;
+  color: aliceblue;
+}
+
+.devPosition {
+  font-size: 1.5em;
+  font-style: italic;
+  color: aliceblue;
+
 }
 
 .profileImageContainer {
@@ -54,8 +79,6 @@ html {
   height: 250px;
   margin: auto;
   margin-top: 100px;
-  
-
 }
 
 .profileImage {
@@ -63,9 +86,9 @@ html {
   border: 1px solid black;
 }
 
-
-
 /* About and experience page */
+
+
 
 .about p {
   padding: 5px;
@@ -362,7 +385,21 @@ footer a:hover {
 }
 
 @media screen and (max-width: 815px) {
-  .icons {
-    border-left: none;
+
+  .nameBox {
+    align-items: flex-start;
   }
+
+  .logoContainer {
+    width: 30px; 
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar > * {
+    padding: 4px 8px;
+  }
+
 }
