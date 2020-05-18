@@ -89,7 +89,9 @@ html {
 
 /* About and experience page */
 
-
+.aboutPage {
+  margin-left: 12%;
+}
 
 .about p {
   padding: 5px;
@@ -186,12 +188,12 @@ span {
   color: black;
 }
 
-.projectLogo {
+.vCenterImage {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: lightblue;
+ 
 }
 
 
@@ -254,6 +256,7 @@ span {
 .bookClubBlue {
   background-color: lightblue;
 }
+
 
 /* Skills and Contact Section */
 
@@ -440,6 +443,10 @@ footer a:hover {
 
   .nameBox {
     align-items: flex-start;
+  }
+
+  .aboutPage {
+    margin-left: 0;
   }
 
   .logoContainer {
