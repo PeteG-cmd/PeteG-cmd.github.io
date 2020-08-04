@@ -62,13 +62,18 @@ const Clients = () => {
       </div>
 
       <div className="clientImages">
-        <img src="https://res.cloudinary.com/enemigos/image/upload/v1596471367/Home/Screenshot_2020-08-03_at_17.05.46_xrtb2y.png" alt="" />
-
-        <img src="https://res.cloudinary.com/enemigos/image/upload/v1596471370/Home/Screenshot_2020-08-03_at_17.08.13_w3nk5w.png" alt="" />
-
-        <img src="https://res.cloudinary.com/enemigos/image/upload/v1596471367/Home/Screenshot_2020-08-03_at_17.15.12_zjhxnb.png" alt="" />
-
-        <img src="https://res.cloudinary.com/enemigos/image/upload/v1596471366/Home/Screenshot_2020-08-03_at_17.10.18_gkyabz.png" alt="" />
+        <figure>
+          <img src="https://res.cloudinary.com/enemigos/image/upload/v1596471367/Home/Screenshot_2020-08-03_at_17.05.46_xrtb2y.png" alt="" />
+        </figure>
+        <figure>
+          <img src="https://res.cloudinary.com/enemigos/image/upload/v1596471370/Home/Screenshot_2020-08-03_at_17.08.13_w3nk5w.png" alt="" />
+        </figure>
+        <figure>
+          <img src="https://res.cloudinary.com/enemigos/image/upload/v1596471367/Home/Screenshot_2020-08-03_at_17.15.12_zjhxnb.png" alt="" />
+        </figure>
+        <figure>
+          <img src="https://res.cloudinary.com/enemigos/image/upload/v1596471366/Home/Screenshot_2020-08-03_at_17.10.18_gkyabz.png" alt="" />
+        </figure>
       </div>
 
       <div className="subtitle has-text-centered">
